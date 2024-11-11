@@ -77,7 +77,7 @@ def get_daily_love():
     daily_love = sentence
     return daily_love
 
-
+daily_love = ""
 def send_weather(access_token, weather):
     # touser 就是 openID
     # template_id 就是模板ID
@@ -109,7 +109,7 @@ def send_weather(access_token, weather):
                 "value": weather[3]
             },
             "today_note": {
-                "value": get_daily_love()
+                "value": daily_love
             }
         }
     }
@@ -130,6 +130,7 @@ def weather_report(this_city):
 
 
 if __name__ == '__main__':
+    daily_love = get_daily_love()
     weather_report("广州")
     openId = os.environ.get("OPEN_ID_F")
     weather_report("佛山")
