@@ -130,4 +130,6 @@ def weather_report(this_city):
 
 
 if __name__ == '__main__':
+    weather_report("广州")
+    openId = os.environ.get("OPEN_ID1")
     weather_report("佛山")
