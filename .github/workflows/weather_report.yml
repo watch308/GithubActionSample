@@ -35,4 +35,5 @@ jobs:
         APP_ID: ${{ secrets.APP_ID }}
         APP_SECRET: ${{ secrets.APP_SECRET }}
         OPEN_ID: ${{ secrets.OPEN_ID }}
+        OPEN_ID_F: ${{ secrets.OPEN_ID_F }}
         TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
